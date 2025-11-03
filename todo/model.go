@@ -2,7 +2,7 @@ package main
 
 import tea "github.com/charmbracelet/bubbletea"
 
-type model struct { //TODO: define the model structure here
+type model struct {
 	choices  []string
 	cursor   int
 	selected map[int]struct{}
@@ -11,7 +11,7 @@ type model struct { //TODO: define the model structure here
 func initialModel() model {
 	return model{
 		// Our to-do list is a grocery list
-		choices: []string{"Buy carrots", "Buy celery", "Buy kohlrabi"},
+		choices: []string{"Do DSA Questions", "Touch Grass", "Make a Project"},
 
 		// A map which indicates which choices are selected. We're using
 		// the  map like a mathematical set. The keys refer to the indexes
